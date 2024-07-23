@@ -45,6 +45,7 @@ export default function FormsPage() {
         variant="filled"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
+        data-test="forms-subscribe-input"
       />
       <Button
         onClick={() => {
@@ -60,6 +61,7 @@ export default function FormsPage() {
             setInputValue('');
           }, 3000);
         }}
+        data-test="forms-subscribe-button"
       >
         Subscribe
       </Button>
