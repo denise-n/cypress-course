@@ -19,4 +19,16 @@ describe('Various example', () => {
     cy.getDataTest('nav-examples').click();
     cy.location('pathname').should('equal', '/examples');
   });
+
+  it.only('intercepts', () => {
+    cy.intercept('POST', 'http://localhost:3000/examples', {
+      body: {
+        message: 'successfully intercepted request',
+      },
+
+      // or using a fixture file
+      fixture: 'example.json',
+    });
+    cy.getDataTest('post-button').click();
+  });
 });
