@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -17,5 +17,8 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
   }
 }

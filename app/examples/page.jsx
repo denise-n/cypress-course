@@ -1,7 +1,7 @@
-import ItemsAccordion from '../components/Accordion'
-import PostButton from '../components/PostButton'
-import styles from './examples.module.css'
-import GrudgeList from '../components/GrudgeList'
+import ItemsAccordion from '../components/Accordion';
+import PostButton from '../components/PostButton';
+import styles from './examples.module.css';
+import GrudgeList from '../components/GrudgeList';
 
 const items = [
   {
@@ -30,19 +30,17 @@ const items = [
     details: `Let's test some actual state changes`,
     id: '4',
   },
-]
+];
 
-export default function ExamplesPage(){ 
-    return (
-        <main className={styles.main}>
-            <h1 className={styles.header}>
-                Examples
-            </h1>
-            <ItemsAccordion items={items} />
-            <div className={styles.postButton}>
-            <PostButton className={styles.postButton} />
-            </div>
-            <GrudgeList />
-        </main>
-    )
+export default function ExamplesPage() {
+  return (
+    <main className={styles.main}>
+      <h1 className={styles.header}>Examples</h1>
+      <ItemsAccordion items={items} />
+      <div className={styles.postButton}>
+        <PostButton className={styles.postButton} />
+      </div>
+      <GrudgeList />
+    </main>
+  );
 }
